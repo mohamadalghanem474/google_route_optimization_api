@@ -12,12 +12,10 @@ part of 'route_optimization_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 RouteOptimizationResponse _$RouteOptimizationResponseFromJson(
-  Map<String, dynamic> json,
-) {
+    Map<String, dynamic> json) {
   return _RouteOptimizationResponse.fromJson(json);
 }
 
@@ -48,28 +46,25 @@ mixin _$RouteOptimizationResponse {
 
 /// @nodoc
 abstract class $RouteOptimizationResponseCopyWith<$Res> {
-  factory $RouteOptimizationResponseCopyWith(
-    RouteOptimizationResponse value,
-    $Res Function(RouteOptimizationResponse) then,
-  ) = _$RouteOptimizationResponseCopyWithImpl<$Res, RouteOptimizationResponse>;
+  factory $RouteOptimizationResponseCopyWith(RouteOptimizationResponse value,
+          $Res Function(RouteOptimizationResponse) then) =
+      _$RouteOptimizationResponseCopyWithImpl<$Res, RouteOptimizationResponse>;
   @useResult
-  $Res call({
-    @JsonKey(name: "routes") List<ShipmentRoute>? routes,
-    @JsonKey(name: "requestLabel") String? requestLabel,
-    @JsonKey(name: "skippedShipments") List<SkippedShipment>? skippedShipments,
-    @JsonKey(name: "validationErrors")
-    List<OptimizeToursValidationError>? validationErrors,
-    @JsonKey(name: "metrics") Metrics? metrics,
-  });
+  $Res call(
+      {@JsonKey(name: "routes") List<ShipmentRoute>? routes,
+      @JsonKey(name: "requestLabel") String? requestLabel,
+      @JsonKey(name: "skippedShipments")
+      List<SkippedShipment>? skippedShipments,
+      @JsonKey(name: "validationErrors")
+      List<OptimizeToursValidationError>? validationErrors,
+      @JsonKey(name: "metrics") Metrics? metrics});
 
   $MetricsCopyWith<$Res>? get metrics;
 }
 
 /// @nodoc
-class _$RouteOptimizationResponseCopyWithImpl<
-  $Res,
-  $Val extends RouteOptimizationResponse
->
+class _$RouteOptimizationResponseCopyWithImpl<$Res,
+        $Val extends RouteOptimizationResponse>
     implements $RouteOptimizationResponseCopyWith<$Res> {
   _$RouteOptimizationResponseCopyWithImpl(this._value, this._then);
 
@@ -89,36 +84,28 @@ class _$RouteOptimizationResponseCopyWithImpl<
     Object? validationErrors = freezed,
     Object? metrics = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            routes:
-                freezed == routes
-                    ? _value.routes
-                    : routes // ignore: cast_nullable_to_non_nullable
-                        as List<ShipmentRoute>?,
-            requestLabel:
-                freezed == requestLabel
-                    ? _value.requestLabel
-                    : requestLabel // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            skippedShipments:
-                freezed == skippedShipments
-                    ? _value.skippedShipments
-                    : skippedShipments // ignore: cast_nullable_to_non_nullable
-                        as List<SkippedShipment>?,
-            validationErrors:
-                freezed == validationErrors
-                    ? _value.validationErrors
-                    : validationErrors // ignore: cast_nullable_to_non_nullable
-                        as List<OptimizeToursValidationError>?,
-            metrics:
-                freezed == metrics
-                    ? _value.metrics
-                    : metrics // ignore: cast_nullable_to_non_nullable
-                        as Metrics?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      routes: freezed == routes
+          ? _value.routes
+          : routes // ignore: cast_nullable_to_non_nullable
+              as List<ShipmentRoute>?,
+      requestLabel: freezed == requestLabel
+          ? _value.requestLabel
+          : requestLabel // ignore: cast_nullable_to_non_nullable
+              as String?,
+      skippedShipments: freezed == skippedShipments
+          ? _value.skippedShipments
+          : skippedShipments // ignore: cast_nullable_to_non_nullable
+              as List<SkippedShipment>?,
+      validationErrors: freezed == validationErrors
+          ? _value.validationErrors
+          : validationErrors // ignore: cast_nullable_to_non_nullable
+              as List<OptimizeToursValidationError>?,
+      metrics: freezed == metrics
+          ? _value.metrics
+          : metrics // ignore: cast_nullable_to_non_nullable
+              as Metrics?,
+    ) as $Val);
   }
 
   /// Create a copy of RouteOptimizationResponse
@@ -140,19 +127,19 @@ class _$RouteOptimizationResponseCopyWithImpl<
 abstract class _$$RouteOptimizationResponseImplCopyWith<$Res>
     implements $RouteOptimizationResponseCopyWith<$Res> {
   factory _$$RouteOptimizationResponseImplCopyWith(
-    _$RouteOptimizationResponseImpl value,
-    $Res Function(_$RouteOptimizationResponseImpl) then,
-  ) = __$$RouteOptimizationResponseImplCopyWithImpl<$Res>;
+          _$RouteOptimizationResponseImpl value,
+          $Res Function(_$RouteOptimizationResponseImpl) then) =
+      __$$RouteOptimizationResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    @JsonKey(name: "routes") List<ShipmentRoute>? routes,
-    @JsonKey(name: "requestLabel") String? requestLabel,
-    @JsonKey(name: "skippedShipments") List<SkippedShipment>? skippedShipments,
-    @JsonKey(name: "validationErrors")
-    List<OptimizeToursValidationError>? validationErrors,
-    @JsonKey(name: "metrics") Metrics? metrics,
-  });
+  $Res call(
+      {@JsonKey(name: "routes") List<ShipmentRoute>? routes,
+      @JsonKey(name: "requestLabel") String? requestLabel,
+      @JsonKey(name: "skippedShipments")
+      List<SkippedShipment>? skippedShipments,
+      @JsonKey(name: "validationErrors")
+      List<OptimizeToursValidationError>? validationErrors,
+      @JsonKey(name: "metrics") Metrics? metrics});
 
   @override
   $MetricsCopyWith<$Res>? get metrics;
@@ -160,16 +147,13 @@ abstract class _$$RouteOptimizationResponseImplCopyWith<$Res>
 
 /// @nodoc
 class __$$RouteOptimizationResponseImplCopyWithImpl<$Res>
-    extends
-        _$RouteOptimizationResponseCopyWithImpl<
-          $Res,
-          _$RouteOptimizationResponseImpl
-        >
+    extends _$RouteOptimizationResponseCopyWithImpl<$Res,
+        _$RouteOptimizationResponseImpl>
     implements _$$RouteOptimizationResponseImplCopyWith<$Res> {
   __$$RouteOptimizationResponseImplCopyWithImpl(
-    _$RouteOptimizationResponseImpl _value,
-    $Res Function(_$RouteOptimizationResponseImpl) _then,
-  ) : super(_value, _then);
+      _$RouteOptimizationResponseImpl _value,
+      $Res Function(_$RouteOptimizationResponseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of RouteOptimizationResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -182,52 +166,45 @@ class __$$RouteOptimizationResponseImplCopyWithImpl<$Res>
     Object? validationErrors = freezed,
     Object? metrics = freezed,
   }) {
-    return _then(
-      _$RouteOptimizationResponseImpl(
-        routes:
-            freezed == routes
-                ? _value._routes
-                : routes // ignore: cast_nullable_to_non_nullable
-                    as List<ShipmentRoute>?,
-        requestLabel:
-            freezed == requestLabel
-                ? _value.requestLabel
-                : requestLabel // ignore: cast_nullable_to_non_nullable
-                    as String?,
-        skippedShipments:
-            freezed == skippedShipments
-                ? _value._skippedShipments
-                : skippedShipments // ignore: cast_nullable_to_non_nullable
-                    as List<SkippedShipment>?,
-        validationErrors:
-            freezed == validationErrors
-                ? _value._validationErrors
-                : validationErrors // ignore: cast_nullable_to_non_nullable
-                    as List<OptimizeToursValidationError>?,
-        metrics:
-            freezed == metrics
-                ? _value.metrics
-                : metrics // ignore: cast_nullable_to_non_nullable
-                    as Metrics?,
-      ),
-    );
+    return _then(_$RouteOptimizationResponseImpl(
+      routes: freezed == routes
+          ? _value._routes
+          : routes // ignore: cast_nullable_to_non_nullable
+              as List<ShipmentRoute>?,
+      requestLabel: freezed == requestLabel
+          ? _value.requestLabel
+          : requestLabel // ignore: cast_nullable_to_non_nullable
+              as String?,
+      skippedShipments: freezed == skippedShipments
+          ? _value._skippedShipments
+          : skippedShipments // ignore: cast_nullable_to_non_nullable
+              as List<SkippedShipment>?,
+      validationErrors: freezed == validationErrors
+          ? _value._validationErrors
+          : validationErrors // ignore: cast_nullable_to_non_nullable
+              as List<OptimizeToursValidationError>?,
+      metrics: freezed == metrics
+          ? _value.metrics
+          : metrics // ignore: cast_nullable_to_non_nullable
+              as Metrics?,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$RouteOptimizationResponseImpl implements _RouteOptimizationResponse {
-  const _$RouteOptimizationResponseImpl({
-    @JsonKey(name: "routes") final List<ShipmentRoute>? routes,
-    @JsonKey(name: "requestLabel") this.requestLabel,
-    @JsonKey(name: "skippedShipments")
-    final List<SkippedShipment>? skippedShipments,
-    @JsonKey(name: "validationErrors")
-    final List<OptimizeToursValidationError>? validationErrors,
-    @JsonKey(name: "metrics") this.metrics,
-  }) : _routes = routes,
-       _skippedShipments = skippedShipments,
-       _validationErrors = validationErrors;
+  const _$RouteOptimizationResponseImpl(
+      {@JsonKey(name: "routes") final List<ShipmentRoute>? routes,
+      @JsonKey(name: "requestLabel") this.requestLabel,
+      @JsonKey(name: "skippedShipments")
+      final List<SkippedShipment>? skippedShipments,
+      @JsonKey(name: "validationErrors")
+      final List<OptimizeToursValidationError>? validationErrors,
+      @JsonKey(name: "metrics") this.metrics})
+      : _routes = routes,
+        _skippedShipments = skippedShipments,
+        _validationErrors = validationErrors;
 
   factory _$RouteOptimizationResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$RouteOptimizationResponseImplFromJson(json);
@@ -287,27 +264,22 @@ class _$RouteOptimizationResponseImpl implements _RouteOptimizationResponse {
             const DeepCollectionEquality().equals(other._routes, _routes) &&
             (identical(other.requestLabel, requestLabel) ||
                 other.requestLabel == requestLabel) &&
-            const DeepCollectionEquality().equals(
-              other._skippedShipments,
-              _skippedShipments,
-            ) &&
-            const DeepCollectionEquality().equals(
-              other._validationErrors,
-              _validationErrors,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._skippedShipments, _skippedShipments) &&
+            const DeepCollectionEquality()
+                .equals(other._validationErrors, _validationErrors) &&
             (identical(other.metrics, metrics) || other.metrics == metrics));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_routes),
-    requestLabel,
-    const DeepCollectionEquality().hash(_skippedShipments),
-    const DeepCollectionEquality().hash(_validationErrors),
-    metrics,
-  );
+      runtimeType,
+      const DeepCollectionEquality().hash(_routes),
+      requestLabel,
+      const DeepCollectionEquality().hash(_skippedShipments),
+      const DeepCollectionEquality().hash(_validationErrors),
+      metrics);
 
   /// Create a copy of RouteOptimizationResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -315,26 +287,27 @@ class _$RouteOptimizationResponseImpl implements _RouteOptimizationResponse {
   @override
   @pragma('vm:prefer-inline')
   _$$RouteOptimizationResponseImplCopyWith<_$RouteOptimizationResponseImpl>
-  get copyWith => __$$RouteOptimizationResponseImplCopyWithImpl<
-    _$RouteOptimizationResponseImpl
-  >(this, _$identity);
+      get copyWith => __$$RouteOptimizationResponseImplCopyWithImpl<
+          _$RouteOptimizationResponseImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$RouteOptimizationResponseImplToJson(this);
+    return _$$RouteOptimizationResponseImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _RouteOptimizationResponse implements RouteOptimizationResponse {
-  const factory _RouteOptimizationResponse({
-    @JsonKey(name: "routes") final List<ShipmentRoute>? routes,
-    @JsonKey(name: "requestLabel") final String? requestLabel,
-    @JsonKey(name: "skippedShipments")
-    final List<SkippedShipment>? skippedShipments,
-    @JsonKey(name: "validationErrors")
-    final List<OptimizeToursValidationError>? validationErrors,
-    @JsonKey(name: "metrics") final Metrics? metrics,
-  }) = _$RouteOptimizationResponseImpl;
+  const factory _RouteOptimizationResponse(
+          {@JsonKey(name: "routes") final List<ShipmentRoute>? routes,
+          @JsonKey(name: "requestLabel") final String? requestLabel,
+          @JsonKey(name: "skippedShipments")
+          final List<SkippedShipment>? skippedShipments,
+          @JsonKey(name: "validationErrors")
+          final List<OptimizeToursValidationError>? validationErrors,
+          @JsonKey(name: "metrics") final Metrics? metrics}) =
+      _$RouteOptimizationResponseImpl;
 
   factory _RouteOptimizationResponse.fromJson(Map<String, dynamic> json) =
       _$RouteOptimizationResponseImpl.fromJson;
@@ -360,12 +333,11 @@ abstract class _RouteOptimizationResponse implements RouteOptimizationResponse {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RouteOptimizationResponseImplCopyWith<_$RouteOptimizationResponseImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 OptimizeToursValidationError _$OptimizeToursValidationErrorFromJson(
-  Map<String, dynamic> json,
-) {
+    Map<String, dynamic> json) {
   return _OptimizeToursValidationError.fromJson(json);
 }
 
@@ -389,34 +361,28 @@ mixin _$OptimizeToursValidationError {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   $OptimizeToursValidationErrorCopyWith<OptimizeToursValidationError>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $OptimizeToursValidationErrorCopyWith<$Res> {
   factory $OptimizeToursValidationErrorCopyWith(
-    OptimizeToursValidationError value,
-    $Res Function(OptimizeToursValidationError) then,
-  ) =
-      _$OptimizeToursValidationErrorCopyWithImpl<
-        $Res,
-        OptimizeToursValidationError
-      >;
+          OptimizeToursValidationError value,
+          $Res Function(OptimizeToursValidationError) then) =
+      _$OptimizeToursValidationErrorCopyWithImpl<$Res,
+          OptimizeToursValidationError>;
   @useResult
-  $Res call({
-    @JsonKey(name: "code") int? code,
-    @JsonKey(name: "displayName") String? displayName,
-    @JsonKey(name: "fields") List<Field>? fields,
-    @JsonKey(name: "errorMessage") String? errorMessage,
-    @JsonKey(name: "offendingValues") String? offendingValues,
-  });
+  $Res call(
+      {@JsonKey(name: "code") int? code,
+      @JsonKey(name: "displayName") String? displayName,
+      @JsonKey(name: "fields") List<Field>? fields,
+      @JsonKey(name: "errorMessage") String? errorMessage,
+      @JsonKey(name: "offendingValues") String? offendingValues});
 }
 
 /// @nodoc
-class _$OptimizeToursValidationErrorCopyWithImpl<
-  $Res,
-  $Val extends OptimizeToursValidationError
->
+class _$OptimizeToursValidationErrorCopyWithImpl<$Res,
+        $Val extends OptimizeToursValidationError>
     implements $OptimizeToursValidationErrorCopyWith<$Res> {
   _$OptimizeToursValidationErrorCopyWithImpl(this._value, this._then);
 
@@ -436,36 +402,28 @@ class _$OptimizeToursValidationErrorCopyWithImpl<
     Object? errorMessage = freezed,
     Object? offendingValues = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            code:
-                freezed == code
-                    ? _value.code
-                    : code // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            displayName:
-                freezed == displayName
-                    ? _value.displayName
-                    : displayName // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            fields:
-                freezed == fields
-                    ? _value.fields
-                    : fields // ignore: cast_nullable_to_non_nullable
-                        as List<Field>?,
-            errorMessage:
-                freezed == errorMessage
-                    ? _value.errorMessage
-                    : errorMessage // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            offendingValues:
-                freezed == offendingValues
-                    ? _value.offendingValues
-                    : offendingValues // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      displayName: freezed == displayName
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      fields: freezed == fields
+          ? _value.fields
+          : fields // ignore: cast_nullable_to_non_nullable
+              as List<Field>?,
+      errorMessage: freezed == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String?,
+      offendingValues: freezed == offendingValues
+          ? _value.offendingValues
+          : offendingValues // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
@@ -473,32 +431,28 @@ class _$OptimizeToursValidationErrorCopyWithImpl<
 abstract class _$$OptimizeToursValidationErrorImplCopyWith<$Res>
     implements $OptimizeToursValidationErrorCopyWith<$Res> {
   factory _$$OptimizeToursValidationErrorImplCopyWith(
-    _$OptimizeToursValidationErrorImpl value,
-    $Res Function(_$OptimizeToursValidationErrorImpl) then,
-  ) = __$$OptimizeToursValidationErrorImplCopyWithImpl<$Res>;
+          _$OptimizeToursValidationErrorImpl value,
+          $Res Function(_$OptimizeToursValidationErrorImpl) then) =
+      __$$OptimizeToursValidationErrorImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    @JsonKey(name: "code") int? code,
-    @JsonKey(name: "displayName") String? displayName,
-    @JsonKey(name: "fields") List<Field>? fields,
-    @JsonKey(name: "errorMessage") String? errorMessage,
-    @JsonKey(name: "offendingValues") String? offendingValues,
-  });
+  $Res call(
+      {@JsonKey(name: "code") int? code,
+      @JsonKey(name: "displayName") String? displayName,
+      @JsonKey(name: "fields") List<Field>? fields,
+      @JsonKey(name: "errorMessage") String? errorMessage,
+      @JsonKey(name: "offendingValues") String? offendingValues});
 }
 
 /// @nodoc
 class __$$OptimizeToursValidationErrorImplCopyWithImpl<$Res>
-    extends
-        _$OptimizeToursValidationErrorCopyWithImpl<
-          $Res,
-          _$OptimizeToursValidationErrorImpl
-        >
+    extends _$OptimizeToursValidationErrorCopyWithImpl<$Res,
+        _$OptimizeToursValidationErrorImpl>
     implements _$$OptimizeToursValidationErrorImplCopyWith<$Res> {
   __$$OptimizeToursValidationErrorImplCopyWithImpl(
-    _$OptimizeToursValidationErrorImpl _value,
-    $Res Function(_$OptimizeToursValidationErrorImpl) _then,
-  ) : super(_value, _then);
+      _$OptimizeToursValidationErrorImpl _value,
+      $Res Function(_$OptimizeToursValidationErrorImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of OptimizeToursValidationError
   /// with the given fields replaced by the non-null parameter values.
@@ -511,35 +465,28 @@ class __$$OptimizeToursValidationErrorImplCopyWithImpl<$Res>
     Object? errorMessage = freezed,
     Object? offendingValues = freezed,
   }) {
-    return _then(
-      _$OptimizeToursValidationErrorImpl(
-        code:
-            freezed == code
-                ? _value.code
-                : code // ignore: cast_nullable_to_non_nullable
-                    as int?,
-        displayName:
-            freezed == displayName
-                ? _value.displayName
-                : displayName // ignore: cast_nullable_to_non_nullable
-                    as String?,
-        fields:
-            freezed == fields
-                ? _value._fields
-                : fields // ignore: cast_nullable_to_non_nullable
-                    as List<Field>?,
-        errorMessage:
-            freezed == errorMessage
-                ? _value.errorMessage
-                : errorMessage // ignore: cast_nullable_to_non_nullable
-                    as String?,
-        offendingValues:
-            freezed == offendingValues
-                ? _value.offendingValues
-                : offendingValues // ignore: cast_nullable_to_non_nullable
-                    as String?,
-      ),
-    );
+    return _then(_$OptimizeToursValidationErrorImpl(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      displayName: freezed == displayName
+          ? _value.displayName
+          : displayName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      fields: freezed == fields
+          ? _value._fields
+          : fields // ignore: cast_nullable_to_non_nullable
+              as List<Field>?,
+      errorMessage: freezed == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String?,
+      offendingValues: freezed == offendingValues
+          ? _value.offendingValues
+          : offendingValues // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -547,17 +494,17 @@ class __$$OptimizeToursValidationErrorImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$OptimizeToursValidationErrorImpl
     implements _OptimizeToursValidationError {
-  const _$OptimizeToursValidationErrorImpl({
-    @JsonKey(name: "code") this.code,
-    @JsonKey(name: "displayName") this.displayName,
-    @JsonKey(name: "fields") final List<Field>? fields,
-    @JsonKey(name: "errorMessage") this.errorMessage,
-    @JsonKey(name: "offendingValues") this.offendingValues,
-  }) : _fields = fields;
+  const _$OptimizeToursValidationErrorImpl(
+      {@JsonKey(name: "code") this.code,
+      @JsonKey(name: "displayName") this.displayName,
+      @JsonKey(name: "fields") final List<Field>? fields,
+      @JsonKey(name: "errorMessage") this.errorMessage,
+      @JsonKey(name: "offendingValues") this.offendingValues})
+      : _fields = fields;
 
   factory _$OptimizeToursValidationErrorImpl.fromJson(
-    Map<String, dynamic> json,
-  ) => _$$OptimizeToursValidationErrorImplFromJson(json);
+          Map<String, dynamic> json) =>
+      _$$OptimizeToursValidationErrorImplFromJson(json);
 
   @override
   @JsonKey(name: "code")
@@ -606,13 +553,12 @@ class _$OptimizeToursValidationErrorImpl
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    code,
-    displayName,
-    const DeepCollectionEquality().hash(_fields),
-    errorMessage,
-    offendingValues,
-  );
+      runtimeType,
+      code,
+      displayName,
+      const DeepCollectionEquality().hash(_fields),
+      errorMessage,
+      offendingValues);
 
   /// Create a copy of OptimizeToursValidationError
   /// with the given fields replaced by the non-null parameter values.
@@ -620,27 +566,27 @@ class _$OptimizeToursValidationErrorImpl
   @override
   @pragma('vm:prefer-inline')
   _$$OptimizeToursValidationErrorImplCopyWith<
-    _$OptimizeToursValidationErrorImpl
-  >
-  get copyWith => __$$OptimizeToursValidationErrorImplCopyWithImpl<
-    _$OptimizeToursValidationErrorImpl
-  >(this, _$identity);
+          _$OptimizeToursValidationErrorImpl>
+      get copyWith => __$$OptimizeToursValidationErrorImplCopyWithImpl<
+          _$OptimizeToursValidationErrorImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$OptimizeToursValidationErrorImplToJson(this);
+    return _$$OptimizeToursValidationErrorImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _OptimizeToursValidationError
     implements OptimizeToursValidationError {
-  const factory _OptimizeToursValidationError({
-    @JsonKey(name: "code") final int? code,
-    @JsonKey(name: "displayName") final String? displayName,
-    @JsonKey(name: "fields") final List<Field>? fields,
-    @JsonKey(name: "errorMessage") final String? errorMessage,
-    @JsonKey(name: "offendingValues") final String? offendingValues,
-  }) = _$OptimizeToursValidationErrorImpl;
+  const factory _OptimizeToursValidationError(
+          {@JsonKey(name: "code") final int? code,
+          @JsonKey(name: "displayName") final String? displayName,
+          @JsonKey(name: "fields") final List<Field>? fields,
+          @JsonKey(name: "errorMessage") final String? errorMessage,
+          @JsonKey(name: "offendingValues") final String? offendingValues}) =
+      _$OptimizeToursValidationErrorImpl;
 
   factory _OptimizeToursValidationError.fromJson(Map<String, dynamic> json) =
       _$OptimizeToursValidationErrorImpl.fromJson;
@@ -666,9 +612,8 @@ abstract class _OptimizeToursValidationError
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$OptimizeToursValidationErrorImplCopyWith<
-    _$OptimizeToursValidationErrorImpl
-  >
-  get copyWith => throw _privateConstructorUsedError;
+          _$OptimizeToursValidationErrorImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 Field _$FieldFromJson(Map<String, dynamic> json) {
@@ -700,12 +645,11 @@ abstract class $FieldCopyWith<$Res> {
   factory $FieldCopyWith(Field value, $Res Function(Field) then) =
       _$FieldCopyWithImpl<$Res, Field>;
   @useResult
-  $Res call({
-    @JsonKey(name: "name") String? name,
-    @JsonKey(name: "subField") Field? subField,
-    @JsonKey(name: "index") int? index,
-    @JsonKey(name: "key") String? key,
-  });
+  $Res call(
+      {@JsonKey(name: "name") String? name,
+      @JsonKey(name: "subField") Field? subField,
+      @JsonKey(name: "index") int? index,
+      @JsonKey(name: "key") String? key});
 
   $FieldCopyWith<$Res>? get subField;
 }
@@ -730,31 +674,24 @@ class _$FieldCopyWithImpl<$Res, $Val extends Field>
     Object? index = freezed,
     Object? key = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            subField:
-                freezed == subField
-                    ? _value.subField
-                    : subField // ignore: cast_nullable_to_non_nullable
-                        as Field?,
-            index:
-                freezed == index
-                    ? _value.index
-                    : index // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            key:
-                freezed == key
-                    ? _value.key
-                    : key // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      subField: freezed == subField
+          ? _value.subField
+          : subField // ignore: cast_nullable_to_non_nullable
+              as Field?,
+      index: freezed == index
+          ? _value.index
+          : index // ignore: cast_nullable_to_non_nullable
+              as int?,
+      key: freezed == key
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 
   /// Create a copy of Field
@@ -775,17 +712,15 @@ class _$FieldCopyWithImpl<$Res, $Val extends Field>
 /// @nodoc
 abstract class _$$FieldImplCopyWith<$Res> implements $FieldCopyWith<$Res> {
   factory _$$FieldImplCopyWith(
-    _$FieldImpl value,
-    $Res Function(_$FieldImpl) then,
-  ) = __$$FieldImplCopyWithImpl<$Res>;
+          _$FieldImpl value, $Res Function(_$FieldImpl) then) =
+      __$$FieldImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    @JsonKey(name: "name") String? name,
-    @JsonKey(name: "subField") Field? subField,
-    @JsonKey(name: "index") int? index,
-    @JsonKey(name: "key") String? key,
-  });
+  $Res call(
+      {@JsonKey(name: "name") String? name,
+      @JsonKey(name: "subField") Field? subField,
+      @JsonKey(name: "index") int? index,
+      @JsonKey(name: "key") String? key});
 
   @override
   $FieldCopyWith<$Res>? get subField;
@@ -796,9 +731,8 @@ class __$$FieldImplCopyWithImpl<$Res>
     extends _$FieldCopyWithImpl<$Res, _$FieldImpl>
     implements _$$FieldImplCopyWith<$Res> {
   __$$FieldImplCopyWithImpl(
-    _$FieldImpl _value,
-    $Res Function(_$FieldImpl) _then,
-  ) : super(_value, _then);
+      _$FieldImpl _value, $Res Function(_$FieldImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of Field
   /// with the given fields replaced by the non-null parameter values.
@@ -810,42 +744,35 @@ class __$$FieldImplCopyWithImpl<$Res>
     Object? index = freezed,
     Object? key = freezed,
   }) {
-    return _then(
-      _$FieldImpl(
-        name:
-            freezed == name
-                ? _value.name
-                : name // ignore: cast_nullable_to_non_nullable
-                    as String?,
-        subField:
-            freezed == subField
-                ? _value.subField
-                : subField // ignore: cast_nullable_to_non_nullable
-                    as Field?,
-        index:
-            freezed == index
-                ? _value.index
-                : index // ignore: cast_nullable_to_non_nullable
-                    as int?,
-        key:
-            freezed == key
-                ? _value.key
-                : key // ignore: cast_nullable_to_non_nullable
-                    as String?,
-      ),
-    );
+    return _then(_$FieldImpl(
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      subField: freezed == subField
+          ? _value.subField
+          : subField // ignore: cast_nullable_to_non_nullable
+              as Field?,
+      index: freezed == index
+          ? _value.index
+          : index // ignore: cast_nullable_to_non_nullable
+              as int?,
+      key: freezed == key
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$FieldImpl implements _Field {
-  const _$FieldImpl({
-    @JsonKey(name: "name") this.name,
-    @JsonKey(name: "subField") this.subField,
-    @JsonKey(name: "index") this.index,
-    @JsonKey(name: "key") this.key,
-  });
+  const _$FieldImpl(
+      {@JsonKey(name: "name") this.name,
+      @JsonKey(name: "subField") this.subField,
+      @JsonKey(name: "index") this.index,
+      @JsonKey(name: "key") this.key});
 
   factory _$FieldImpl.fromJson(Map<String, dynamic> json) =>
       _$$FieldImplFromJson(json);
@@ -894,17 +821,18 @@ class _$FieldImpl implements _Field {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$FieldImplToJson(this);
+    return _$$FieldImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _Field implements Field {
-  const factory _Field({
-    @JsonKey(name: "name") final String? name,
-    @JsonKey(name: "subField") final Field? subField,
-    @JsonKey(name: "index") final int? index,
-    @JsonKey(name: "key") final String? key,
-  }) = _$FieldImpl;
+  const factory _Field(
+      {@JsonKey(name: "name") final String? name,
+      @JsonKey(name: "subField") final Field? subField,
+      @JsonKey(name: "index") final int? index,
+      @JsonKey(name: "key") final String? key}) = _$FieldImpl;
 
   factory _Field.fromJson(Map<String, dynamic> json) = _$FieldImpl.fromJson;
 

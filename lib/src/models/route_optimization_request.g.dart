@@ -312,12 +312,12 @@ Map<String, dynamic> _$$LatLngImplToJson(_$LatLngImpl instance) =>
     };
 
 _$LoadImpl _$$LoadImplFromJson(Map<String, dynamic> json) => _$LoadImpl(
-      amount: (json['amount'] as num?)?.toInt(),
+      amount: _amountFromJson(json['amount']),
     );
 
 Map<String, dynamic> _$$LoadImplToJson(_$LoadImpl instance) =>
     <String, dynamic>{
-      if (instance.amount case final value?) 'amount': value,
+      if (_amountToJson(instance.amount) case final value?) 'amount': value,
     };
 
 _$LoadLimitImpl _$$LoadLimitImplFromJson(Map<String, dynamic> json) =>

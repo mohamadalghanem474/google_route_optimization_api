@@ -3451,8 +3451,12 @@ Load _$LoadFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Load {
-  @JsonKey(name: "amount", includeIfNull: false)
-  int? get amount => throw _privateConstructorUsedError;
+  @JsonKey(
+      name: "amount",
+      includeIfNull: false,
+      fromJson: _amountFromJson,
+      toJson: _amountToJson)
+  double? get amount => throw _privateConstructorUsedError;
 
   /// Serializes this Load to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -3468,7 +3472,13 @@ abstract class $LoadCopyWith<$Res> {
   factory $LoadCopyWith(Load value, $Res Function(Load) then) =
       _$LoadCopyWithImpl<$Res, Load>;
   @useResult
-  $Res call({@JsonKey(name: "amount", includeIfNull: false) int? amount});
+  $Res call(
+      {@JsonKey(
+          name: "amount",
+          includeIfNull: false,
+          fromJson: _amountFromJson,
+          toJson: _amountToJson)
+      double? amount});
 }
 
 /// @nodoc
@@ -3492,7 +3502,7 @@ class _$LoadCopyWithImpl<$Res, $Val extends Load>
       amount: freezed == amount
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as double?,
     ) as $Val);
   }
 }
@@ -3504,7 +3514,13 @@ abstract class _$$LoadImplCopyWith<$Res> implements $LoadCopyWith<$Res> {
       __$$LoadImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({@JsonKey(name: "amount", includeIfNull: false) int? amount});
+  $Res call(
+      {@JsonKey(
+          name: "amount",
+          includeIfNull: false,
+          fromJson: _amountFromJson,
+          toJson: _amountToJson)
+      double? amount});
 }
 
 /// @nodoc
@@ -3525,7 +3541,7 @@ class __$$LoadImplCopyWithImpl<$Res>
       amount: freezed == amount
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as double?,
     ));
   }
 }
@@ -3534,14 +3550,23 @@ class __$$LoadImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$LoadImpl implements _Load {
   const _$LoadImpl(
-      {@JsonKey(name: "amount", includeIfNull: false) this.amount});
+      {@JsonKey(
+          name: "amount",
+          includeIfNull: false,
+          fromJson: _amountFromJson,
+          toJson: _amountToJson)
+      this.amount});
 
   factory _$LoadImpl.fromJson(Map<String, dynamic> json) =>
       _$$LoadImplFromJson(json);
 
   @override
-  @JsonKey(name: "amount", includeIfNull: false)
-  final int? amount;
+  @JsonKey(
+      name: "amount",
+      includeIfNull: false,
+      fromJson: _amountFromJson,
+      toJson: _amountToJson)
+  final double? amount;
 
   @override
   String toString() {
@@ -3578,14 +3603,22 @@ class _$LoadImpl implements _Load {
 
 abstract class _Load implements Load {
   const factory _Load(
-          {@JsonKey(name: "amount", includeIfNull: false) final int? amount}) =
-      _$LoadImpl;
+      {@JsonKey(
+          name: "amount",
+          includeIfNull: false,
+          fromJson: _amountFromJson,
+          toJson: _amountToJson)
+      final double? amount}) = _$LoadImpl;
 
   factory _Load.fromJson(Map<String, dynamic> json) = _$LoadImpl.fromJson;
 
   @override
-  @JsonKey(name: "amount", includeIfNull: false)
-  int? get amount;
+  @JsonKey(
+      name: "amount",
+      includeIfNull: false,
+      fromJson: _amountFromJson,
+      toJson: _amountToJson)
+  double? get amount;
 
   /// Create a copy of Load
   /// with the given fields replaced by the non-null parameter values.
