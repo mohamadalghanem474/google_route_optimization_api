@@ -1,12 +1,11 @@
 name: google_route_optimization_api
 description: A starting point for Dart libraries or applications.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/mohamadalghanem474/google_route_optimization_api
 
 environment:
   sdk: ^3.6.2
 
-# Add regular dependencies here.
 dependencies:
   dio: ^5.8.0+1
   freezed_annotation: ^2.4.4
