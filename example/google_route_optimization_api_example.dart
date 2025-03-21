@@ -58,7 +58,7 @@ void main() async {
         ),
       ),
     );
-    print(response.data);
+    print(response.metrics);
   } catch (e) {
     if (e is DioException) {
       log("${e.response}");
