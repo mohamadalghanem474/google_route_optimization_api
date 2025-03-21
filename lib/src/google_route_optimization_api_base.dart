@@ -3,6 +3,7 @@ import 'package:google_route_optimization_api/src/get_access_token.dart';
 
 import 'models/route_optimization_request.dart';
 export 'models/route_optimization_request.dart';
+export 'models/route_optimization_response.dart';
 
 class GoogleRouteOptimizationApiBase {
   GoogleRouteOptimizationApiBase._();
